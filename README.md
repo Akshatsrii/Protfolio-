@@ -432,52 +432,6 @@ The contact form on my portfolio is powered by **Web3Forms** for instant communi
 
 ---
 
-## 🚀 **Getting Started**
-
-### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/Akshatsrii/Personal-Protfolio.git
-
-# Navigate to project directory
-cd Personal-Protfolio
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-```
-
----
-
-## 🤝 **Contributing**
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Akshatsrii/Personal-Protfolio/issues).
-
----
-
-## 📝 **License**
-
-This project is **MIT** licensed.
-
----
-
-<div align="center">
-
-### 💚 **Show Some Love**
-
-If you like this project, please consider giving it a ⭐️
-
----
 
 **Made with ❤️ and ☕ by Akshat Srivastava**
 
