@@ -75,14 +75,14 @@ const akshat = {
     role: "Full-Stack Developer (MERN)",
     education: "B.Tech IT @ RTU Technical University, Kota",
     graduationYear: "2023 - 2027",
-    cgpa: "8.3 / 10",
+    cgpa: "8.9 / 10",
     location: "Kota, Rajasthan, India 🇮🇳",
     contact: {
-        phone: "+91-0921085451",
-        email: "akshatsrivastava53@gmail.com",
-        linkedin: "linkedin.com/in/Akshatsrivastava",
+        phone: "+91-9024085505",
+        email: "akshat.23ee495@rtu.ac.in",
+        linkedin: "https://www.linkedin.com/in/akshat-srivastava-6105102a7/",
         github: "github.com/Akshatsrii",
-        leetcode: "leetcode.com/Akshatsrivastava"
+        leetcode: "https://leetcode.com/u/Akshatsrivastava007/"
     },
     interests: ["Web Development", "Blockchain", "Hackathons", "Problem Solving"],
     currentFocus: "Building scalable web applications & exploring Web3",
