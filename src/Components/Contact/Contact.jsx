@@ -54,7 +54,7 @@ const Contact = () => {
                 src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png"
                 alt="email"
               />
-              <p>chickusrivastava535@gmail.com</p>
+              <p>akshatsrivastava1204@gmail.com</p>
             </a>
 
             <a

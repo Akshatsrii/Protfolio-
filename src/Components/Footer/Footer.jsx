@@ -46,7 +46,7 @@ const Footer = () => {
               <img src={mail_icon} alt="email" />
               <div>
                 <span className="contact-label">Email</span>
-                <a href="mailto:chickusrivastava535@gmail.com">chickusrivastava535@gmail.com</a>
+                <a href="mailto:chickusrivastava535@gmail.com">akshatsrivastava1204@gmail.com</a>
               </div>
             </div>
             <div className="footer-contact-item">
