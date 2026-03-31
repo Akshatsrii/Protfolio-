@@ -31,7 +31,7 @@
 
 | Institution | Degree | Duration | CGPA |
 |------------|--------|----------|------|
-| **RTU Technical University, Kota** | B.Tech - Computer Science & Engineering | Aug 2023 - Apr 2027 | **8.3 / 10** |
+| **RTU Technical University, Kota** | B.Tech - Computer Science & Engineering | Aug 2023 - Apr 2027 | **8.9 / 10** |
 
 </div>
 
