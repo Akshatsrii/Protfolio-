@@ -19,8 +19,8 @@
   width: 100%;
   height: 100%;
   background-image: 
-    linear-gradient(rgba(74, 222, 128, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(74, 222, 128, 0.02) 1px, transparent 1px);
+    linear-gradient(rgba(255, 140, 0, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 140, 0, 0.02) 1px, transparent 1px);
   background-size: 60px 60px;
   opacity: 0.6;
   pointer-events: none;
@@ -32,7 +32,7 @@
   position: absolute;
   width: 450px;
   height: 450px;
-  background: linear-gradient(135deg, #4ade80, #22c55e);
+  background: linear-gradient(135deg, #ff8c00, #ff6b00);
   border-radius: 50%;
   filter: blur(100px);
   opacity: 0.15;
@@ -91,9 +91,9 @@
   transform: translateX(-50%);
   width: 150px;
   height: 4px;
-  background: linear-gradient(90deg, transparent, #4ade80, #22c55e, transparent);
+  background: linear-gradient(90deg, transparent, #ff8c00, #ff6b00, transparent);
   border-radius: 2px;
-  box-shadow: 0 0 20px rgba(74, 222, 128, 0.5);
+  box-shadow: 0 0 20px rgba(255, 140, 0, 0.5);
   animation: expandWidth 1s ease-out 0.3s backwards;
 }
 
@@ -140,7 +140,7 @@
   font-size: 42px;
   font-weight: 700;
   margin: 0;
-  background: linear-gradient(135deg, #4ade80, #22c55e);
+  background: linear-gradient(135deg, #ff8c00, #ff6b00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -180,7 +180,7 @@
   padding: 20px 25px;
   background: rgba(15, 15, 15, 0.6);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(74, 222, 128, 0.1);
+  border: 1px solid rgba(255, 140, 0, 0.1);
   border-radius: 16px;
   text-decoration: none;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -195,7 +195,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(74, 222, 128, 0.05), transparent);
+  background: linear-gradient(135deg, rgba(255, 140, 0, 0.05), transparent);
   opacity: 0;
   transition: opacity 0.4s ease;
 }
@@ -206,17 +206,17 @@
 
 .contact-detail:hover {
   transform: translateX(10px);
-  border-color: rgba(74, 222, 128, 0.3);
+  border-color: rgba(255, 140, 0, 0.3);
   box-shadow: 
     0 10px 40px rgba(0, 0, 0, 0.4),
-    0 0 30px rgba(74, 222, 128, 0.2);
+    0 0 30px rgba(255, 140, 0, 0.2);
 }
 
 .contact-detail img {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
-  filter: brightness(0) saturate(100%) invert(73%) sepia(47%) saturate(434%) hue-rotate(80deg) brightness(95%) contrast(89%);
+  filter: brightness(0) saturate(100%) invert(56%) sepia(98%) saturate(1703%) hue-rotate(360deg) brightness(101%) contrast(101%);
   transition: transform 0.4s ease;
 }
 
@@ -232,7 +232,7 @@
 }
 
 .contact-detail:hover p {
-  color: #4ade80;
+  color: #ff8c00;
 }
 
 /* Contact Right - Form */
@@ -260,7 +260,7 @@
   padding: 45px 40px;
   background: rgba(15, 15, 15, 0.6);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(74, 222, 128, 0.1);
+  border: 1px solid rgba(255, 140, 0, 0.1);
   border-radius: 24px;
   position: relative;
   overflow: hidden;
@@ -273,7 +273,7 @@
   left: -2px;
   right: -2px;
   bottom: -2px;
-  background: linear-gradient(135deg, #4ade80, #22c55e, #16a34a, #4ade80);
+  background: linear-gradient(135deg, #ff8c00, #ff6b00, #ff4500, #ff8c00);
   background-size: 300% 300%;
   border-radius: 24px;
   opacity: 0;
@@ -304,7 +304,7 @@
   width: 100%;
   padding: 20px 22px;
   background: rgba(30, 30, 30, 0.6);
-  border: 1px solid rgba(74, 222, 128, 0.2);
+  border: 1px solid rgba(255, 140, 0, 0.2);
   border-radius: 12px;
   color: #e5e7eb;
   font-size: 16px;
@@ -322,10 +322,10 @@
 .contact-right input:focus,
 .contact-right textarea:focus {
   background: rgba(30, 30, 30, 0.8);
-  border-color: #4ade80;
+  border-color: #ff8c00;
   box-shadow: 
-    0 0 0 3px rgba(74, 222, 128, 0.1),
-    0 10px 30px rgba(74, 222, 128, 0.2);
+    0 0 0 3px rgba(255, 140, 0, 0.1),
+    0 10px 30px rgba(255, 140, 0, 0.2);
   transform: translateY(-2px);
 }
 
@@ -337,7 +337,7 @@
 /* Submit Button */
 .contact-right button {
   padding: 20px 40px;
-  background: linear-gradient(135deg, #4ade80, #22c55e);
+  background: linear-gradient(135deg, #ff8c00, #ff6b00);
   border: none;
   border-radius: 50px;
   color: #0a0a0a;
@@ -347,7 +347,7 @@
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(74, 222, 128, 0.3);
+  box-shadow: 0 10px 30px rgba(255, 140, 0, 0.3);
   margin-top: 5px;
 }
 
@@ -370,7 +370,7 @@
 
 .contact-right button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(74, 222, 128, 0.5);
+  box-shadow: 0 15px 40px rgba(255, 140, 0, 0.5);
 }
 
 .contact-right button:active {
@@ -380,10 +380,10 @@
 /* Form Result Message */
 .form-result {
   padding: 15px 20px;
-  background: rgba(74, 222, 128, 0.1);
-  border: 1px solid rgba(74, 222, 128, 0.3);
+  background: rgba(255, 140, 0, 0.1);
+  border: 1px solid rgba(255, 140, 0, 0.3);
   border-radius: 12px;
-  color: #4ade80;
+  color: #ff8c00;
   font-size: 15px;
   font-weight: 600;
   text-align: center;

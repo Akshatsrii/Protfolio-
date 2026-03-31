@@ -1,7 +1,7 @@
 .footer {
   position: relative;
   background: rgba(10, 10, 10, 0.95);
-  border-top: 1px solid rgba(74, 222, 128, 0.2);
+  border-top: 1px solid rgba(255, 140, 0, 0.2);
   margin-top: 100px;
   overflow: hidden;
 }
@@ -15,8 +15,8 @@
   width: 100%;
   height: 100%;
   background-image: 
-    linear-gradient(rgba(74, 222, 128, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(74, 222, 128, 0.02) 1px, transparent 1px);
+    linear-gradient(rgba(255, 140, 0, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 140, 0, 0.02) 1px, transparent 1px);
   background-size: 40px 40px;
   opacity: 0.5;
   pointer-events: none;
@@ -27,7 +27,7 @@
   position: absolute;
   width: 400px;
   height: 400px;
-  background: linear-gradient(135deg, #4ade80, #22c55e);
+  background: linear-gradient(135deg, #ff8c00, #ff6b00);
   border-radius: 50%;
   filter: blur(120px);
   opacity: 0.1;
@@ -64,7 +64,7 @@
 
 .footer-col h2 {
   font-size: 32px;
-  background: linear-gradient(135deg, #4ade80, #22c55e);
+  background: linear-gradient(135deg, #ff8c00, #ff6b00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -83,7 +83,7 @@
   left: 0;
   width: 50px;
   height: 3px;
-  background: linear-gradient(90deg, #4ade80, #22c55e);
+  background: linear-gradient(90deg, #ff8c00, #ff6b00);
   border-radius: 2px;
 }
 
@@ -105,7 +105,7 @@
 
 .footer-tagline {
   font-size: 16px;
-  color: #4ade80;
+  color: #ff8c00;
   font-weight: 600;
   margin: 0;
 }
@@ -130,8 +130,8 @@
   justify-content: center;
   width: 45px;
   height: 45px;
-  background: rgba(74, 222, 128, 0.1);
-  border: 1px solid rgba(74, 222, 128, 0.2);
+  background: rgba(255, 140, 0, 0.1);
+  border: 1px solid rgba(255, 140, 0, 0.2);
   border-radius: 50%;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
@@ -155,7 +155,7 @@
   transform: translate(-50%, -50%) scale(0);
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #4ade80, #22c55e);
+  background: linear-gradient(135deg, #ff8c00, #ff6b00);
   border-radius: 50%;
   transition: transform 0.4s ease;
   z-index: 0;
@@ -166,8 +166,8 @@
 }
 
 .footer-social-link:hover {
-  border-color: #4ade80;
-  box-shadow: 0 8px 25px rgba(74, 222, 128, 0.3);
+  border-color: #ff8c00;
+  box-shadow: 0 8px 25px rgba(255, 140, 0, 0.3);
   transform: translateY(-5px);
 }
 
@@ -203,12 +203,12 @@
   bottom: -2px;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, #4ade80, #22c55e);
+  background: linear-gradient(90deg, #ff8c00, #ff6b00);
   transition: width 0.3s ease;
 }
 
 .footer-links ul li a:hover {
-  color: #4ade80;
+  color: #ff8c00;
   padding-left: 10px;
 }
 
@@ -228,15 +228,15 @@
   align-items: flex-start;
   gap: 15px;
   padding: 15px;
-  background: rgba(74, 222, 128, 0.05);
-  border: 1px solid rgba(74, 222, 128, 0.1);
+  background: rgba(255, 140, 0, 0.05);
+  border: 1px solid rgba(255, 140, 0, 0.1);
   border-radius: 12px;
   transition: all 0.3s ease;
 }
 
 .footer-contact-item:hover {
-  background: rgba(74, 222, 128, 0.08);
-  border-color: rgba(74, 222, 128, 0.2);
+  background: rgba(255, 140, 0, 0.08);
+  border-color: rgba(255, 140, 0, 0.2);
   transform: translateX(5px);
 }
 
@@ -249,11 +249,11 @@
 }
 
 .footer-contact-item img {
-  filter: brightness(0) saturate(100%) invert(73%) sepia(47%) saturate(434%) hue-rotate(80deg) brightness(95%) contrast(89%);
+  filter: brightness(0) saturate(100%) invert(56%) sepia(98%) saturate(1703%) hue-rotate(360deg) brightness(101%) contrast(101%);
 }
 
 .location-icon {
-  color: #4ade80;
+  color: #ff8c00;
 }
 
 .footer-contact-item > div {
@@ -279,14 +279,14 @@
 }
 
 .footer-contact-item a:hover {
-  color: #4ade80;
+  color: #ff8c00;
 }
 
 /* Footer Divider */
 .footer-divider {
   width: 100%;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(74, 222, 128, 0.3), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 140, 0, 0.3), transparent);
   margin: 0 0 30px 0;
 }
 
@@ -319,11 +319,11 @@
 }
 
 .footer-bottom-links a:hover {
-  color: #4ade80;
+  color: #ff8c00;
 }
 
 .footer-bottom-links .separator {
-  color: #4ade80;
+  color: #ff8c00;
   font-weight: 700;
 }
 
@@ -334,10 +334,10 @@
   justify-content: center;
   width: 45px;
   height: 45px;
-  background: linear-gradient(135deg, rgba(74, 222, 128, 0.1), rgba(34, 197, 94, 0.1));
-  border: 2px solid rgba(74, 222, 128, 0.3);
+  background: linear-gradient(135deg, rgba(255, 140, 0, 0.1), rgba(255, 107, 0, 0.1));
+  border: 2px solid rgba(255, 140, 0, 0.3);
   border-radius: 50%;
-  color: #4ade80;
+  color: #ff8c00;
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
@@ -352,7 +352,7 @@
   transform: translate(-50%, -50%) scale(0);
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #4ade80, #22c55e);
+  background: linear-gradient(135deg, #ff8c00, #ff6b00);
   border-radius: 50%;
   transition: transform 0.4s ease;
   z-index: 0;
@@ -363,8 +363,8 @@
 }
 
 .scroll-to-top:hover {
-  border-color: #4ade80;
-  box-shadow: 0 10px 30px rgba(74, 222, 128, 0.3);
+  border-color: #ff8c00;
+  box-shadow: 0 10px 30px rgba(255, 140, 0, 0.3);
   transform: translateY(-5px);
 }
 

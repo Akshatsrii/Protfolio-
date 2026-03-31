@@ -32,7 +32,7 @@
 .ach-orb-1 {
   width: 450px;
   height: 450px;
-  background: linear-gradient(135deg, #4ade80, #22c55e);
+  background: linear-gradient(135deg, #ff8c00, #ff6b00);
   top: -100px;
   left: -100px;
   animation-delay: 0s;
@@ -41,7 +41,7 @@
 .ach-orb-2 {
   width: 400px;
   height: 400px;
-  background: linear-gradient(135deg, #86efac, #4ade80);
+  background: linear-gradient(135deg, #ffa500, #ff8c00);
   bottom: -100px;
   right: -100px;
   animation-delay: 10s;
@@ -66,8 +66,8 @@
   width: 100%;
   height: 100%;
   background-image: 
-    linear-gradient(rgba(74, 222, 128, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(74, 222, 128, 0.02) 1px, transparent 1px);
+    linear-gradient(rgba(255, 140, 0, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 140, 0, 0.02) 1px, transparent 1px);
   background-size: 60px 60px;
   opacity: 0.6;
 }
@@ -96,7 +96,7 @@
 }
 
 .achievements-title h1 .highlight {
-  background: linear-gradient(135deg, #4ade80, #22c55e);
+  background: linear-gradient(135deg, #ff8c00, #ff6b00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -106,11 +106,11 @@
 .title-underline {
   width: 180px;
   height: 4px;
-  background: linear-gradient(90deg, transparent, #4ade80, #22c55e, transparent);
+  background: linear-gradient(90deg, transparent, #ff8c00, #ff6b00, transparent);
   margin: 20px auto;
   border-radius: 2px;
   animation: expandWidth 1s ease-out 0.3s backwards;
-  box-shadow: 0 0 20px rgba(74, 222, 128, 0.5);
+  box-shadow: 0 0 20px rgba(255, 140, 0, 0.5);
 }
 
 @keyframes fadeInDown {
@@ -171,7 +171,7 @@
   background: rgba(15, 15, 15, 0.6);
   backdrop-filter: blur(10px);
   border-radius: 24px;
-  border: 1px solid rgba(74, 222, 128, 0.1);
+  border: 1px solid rgba(255, 140, 0, 0.1);
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   overflow: hidden;
@@ -192,7 +192,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(74, 222, 128, 0.05), transparent);
+  background: linear-gradient(135deg, rgba(255, 140, 0, 0.05), transparent);
   opacity: 0;
   transition: opacity 0.5s ease;
   z-index: 0;
@@ -204,10 +204,10 @@
 
 .achievement-card:hover {
   transform: translateY(-10px) scale(1.02);
-  border-color: rgba(74, 222, 128, 0.3);
+  border-color: rgba(255, 140, 0, 0.3);
   box-shadow: 
     0 20px 60px rgba(0, 0, 0, 0.5),
-    0 0 40px rgba(74, 222, 128, 0.2);
+    0 0 40px rgba(255, 140, 0, 0.2);
 }
 
 /* Achievement Number Badge */
@@ -218,24 +218,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgba(74, 222, 128, 0.1), rgba(34, 197, 94, 0.1));
-  border: 2px solid rgba(74, 222, 128, 0.3);
+  background: linear-gradient(135deg, rgba(255, 140, 0, 0.1), rgba(255, 107, 0, 0.1));
+  border: 2px solid rgba(255, 140, 0, 0.3);
   border-radius: 18px;
   transition: all 0.5s ease;
   z-index: 1;
 }
 
 .achievement-card:hover .achievement-number {
-  background: linear-gradient(135deg, rgba(74, 222, 128, 0.2), rgba(34, 197, 94, 0.2));
-  border-color: #4ade80;
+  background: linear-gradient(135deg, rgba(255, 140, 0, 0.2), rgba(255, 107, 0, 0.2));
+  border-color: #ff8c00;
   transform: scale(1.1) rotate(5deg);
-  box-shadow: 0 10px 30px rgba(74, 222, 128, 0.3);
+  box-shadow: 0 10px 30px rgba(255, 140, 0, 0.3);
 }
 
 .number-text {
   font-size: 28px;
   font-weight: 700;
-  background: linear-gradient(135deg, #4ade80, #22c55e);
+  background: linear-gradient(135deg, #ff8c00, #ff6b00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -250,7 +250,7 @@
   transform: translate(-50%, -50%);
   width: 60px;
   height: 60px;
-  background: radial-gradient(circle, rgba(74, 222, 128, 0.4), transparent);
+  background: radial-gradient(circle, rgba(255, 140, 0, 0.4), transparent);
   border-radius: 50%;
   opacity: 0;
   transition: opacity 0.5s ease;
@@ -291,7 +291,7 @@
 }
 
 .achievement-card:hover .achievement-type {
-  color: #4ade80;
+  color: #ff8c00;
 }
 
 .achievement-title {
@@ -304,7 +304,7 @@
 }
 
 .achievement-card:hover .achievement-title {
-  color: #4ade80;
+  color: #ff8c00;
 }
 
 .achievement-description {
@@ -329,19 +329,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(74, 222, 128, 0.1);
-  border: 1px solid rgba(74, 222, 128, 0.2);
+  background: rgba(255, 140, 0, 0.1);
+  border: 1px solid rgba(255, 140, 0, 0.2);
   border-radius: 50%;
-  color: #4ade80;
+  color: #ff8c00;
   transition: all 0.5s ease;
   z-index: 1;
 }
 
 .achievement-card:hover .achievement-icon {
-  background: rgba(74, 222, 128, 0.2);
-  border-color: #4ade80;
+  background: rgba(255, 140, 0, 0.2);
+  border-color: #ff8c00;
   transform: scale(1.2) rotate(15deg);
-  box-shadow: 0 10px 30px rgba(74, 222, 128, 0.3);
+  box-shadow: 0 10px 30px rgba(255, 140, 0, 0.3);
 }
 
 .achievement-icon svg {
@@ -355,7 +355,7 @@
   left: -2px;
   right: -2px;
   bottom: -2px;
-  background: linear-gradient(135deg, #4ade80, #22c55e, #16a34a, #4ade80);
+  background: linear-gradient(135deg, #ff8c00, #ff6b00, #ff4500, #ff8c00);
   background-size: 300% 300%;
   border-radius: 24px;
   opacity: 0;

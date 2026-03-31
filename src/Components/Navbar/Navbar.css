@@ -9,7 +9,7 @@
   padding: 20px 170px;
   background: rgba(10, 10, 10, 0.7);
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(74, 222, 128, 0.1);
+  border-bottom: 1px solid rgba(255, 140, 0, 0.1);
   z-index: 1000;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   animation: slideDown 0.6s ease-out;
@@ -30,8 +30,8 @@
   padding: 15px 170px;
   background: rgba(10, 10, 10, 0.95);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5),
-              0 0 30px rgba(74, 222, 128, 0.1);
-  border-bottom: 1px solid rgba(74, 222, 128, 0.2);
+              0 0 30px rgba(255, 140, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 140, 0, 0.2);
 }
 
 /* Glowing effect */
@@ -44,9 +44,9 @@
   height: 1px;
   background: linear-gradient(90deg, 
     transparent, 
-    rgba(74, 222, 128, 0.5) 30%, 
-    rgba(34, 197, 94, 0.8) 50%, 
-    rgba(74, 222, 128, 0.5) 70%, 
+    rgba(255, 140, 0, 0.5) 30%, 
+    rgba(255, 107, 0, 0.8) 50%, 
+    rgba(255, 140, 0, 0.5) 70%, 
     transparent
   );
   animation: glowPulse 3s infinite ease-in-out;
@@ -83,7 +83,7 @@
 }
 
 .logo-highlight {
-  background: linear-gradient(135deg, #4ade80, #22c55e);
+  background: linear-gradient(135deg, #ff8c00, #ff6b00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -96,7 +96,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, #4ade80, #22c55e);
+  background: linear-gradient(90deg, #ff8c00, #ff6b00);
   transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -143,13 +143,13 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, #4ade80, #22c55e);
+  background: linear-gradient(90deg, #ff8c00, #ff6b00);
   transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 0 10px rgba(74, 222, 128, 0.6);
+  box-shadow: 0 0 10px rgba(255, 140, 0, 0.6);
 }
 
 .nav-menu .anchor-link:hover {
-  color: #4ade80;
+  color: #ff8c00;
 }
 
 .nav-menu .anchor-link:hover .link-text {
@@ -162,7 +162,7 @@
 
 /* Active Menu Item */
 .nav-menu li.active .anchor-link {
-  color: #4ade80;
+  color: #ff8c00;
 }
 
 .nav-menu li.active .link-hover-effect {
@@ -177,9 +177,9 @@
   transform: translateY(-50%);
   width: 6px;
   height: 6px;
-  background: #4ade80;
+  background: #ff8c00;
   border-radius: 50%;
-  box-shadow: 0 0 10px rgba(74, 222, 128, 0.8);
+  box-shadow: 0 0 10px rgba(255, 140, 0, 0.8);
   animation: pulse-dot 2s infinite;
 }
 
@@ -204,11 +204,11 @@
   align-items: center;
   gap: 10px;
   padding: 12px 30px;
-  background: linear-gradient(135deg, rgba(74, 222, 128, 0.1), rgba(34, 197, 94, 0.1));
-  border: 2px solid #4ade80;
+  background: linear-gradient(135deg, rgba(255, 140, 0, 0.1), rgba(255, 107, 0, 0.1));
+  border: 2px solid #ff8c00;
   border-radius: 50px;
   text-decoration: none;
-  color: #4ade80;
+  color: #ff8c00;
   font-size: 16px;
   font-weight: 600;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -224,7 +224,7 @@
   transform: translate(-50%, -50%);
   width: 0;
   height: 0;
-  background: radial-gradient(circle, rgba(74, 222, 128, 0.3), transparent);
+  background: radial-gradient(circle, rgba(255, 140, 0, 0.3), transparent);
   border-radius: 50%;
   transition: all 0.6s ease;
 }
@@ -235,11 +235,11 @@
 }
 
 .nav-connect .anchor-link:hover {
-  background: linear-gradient(135deg, rgba(74, 222, 128, 0.2), rgba(34, 197, 94, 0.2));
-  box-shadow: 0 0 30px rgba(74, 222, 128, 0.4),
-              inset 0 0 20px rgba(74, 222, 128, 0.1);
+  background: linear-gradient(135deg, rgba(255, 140, 0, 0.2), rgba(255, 107, 0, 0.2));
+  box-shadow: 0 0 30px rgba(255, 140, 0, 0.4),
+              inset 0 0 20px rgba(255, 140, 0, 0.1);
   transform: translateY(-2px);
-  border-color: #22c55e;
+  border-color: #ff6b00;
 }
 
 .connect-text {
@@ -271,7 +271,7 @@
 
 .nav-mob-open:hover,
 .nav-mob-close:hover {
-  filter: brightness(0) invert(1) drop-shadow(0 0 10px #4ade80);
+  filter: brightness(0) invert(1) drop-shadow(0 0 10px #ff8c00);
   transform: scale(1.1);
 }
 
@@ -325,7 +325,7 @@
     width: 300px;
     height: 100vh;
     padding: 80px 40px;
-    border-left: 2px solid rgba(74, 222, 128, 0.2);
+    border-left: 2px solid rgba(255, 140, 0, 0.2);
     transition: right 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: -10px 0 40px rgba(0, 0, 0, 0.8);
   }
