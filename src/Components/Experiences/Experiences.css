@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
 .experiences {
   position: relative;
   display: flex;
@@ -8,9 +10,10 @@
   margin: 80px 170px;
   padding: 60px 0;
   overflow: hidden;
+  font-family: 'Inter', sans-serif;
 }
 
-/* Background Effects */
+/* ── Background ── */
 .experiences-background {
   position: absolute;
   top: 0;
@@ -24,15 +27,15 @@
 .floating-orb {
   position: absolute;
   border-radius: 50%;
-  filter: blur(100px);
-  opacity: 0.15;
+  filter: blur(90px);
+  opacity: 0.2;
   animation: float 25s infinite ease-in-out;
 }
 
 .exp-orb-1 {
   width: 450px;
   height: 450px;
-  background: linear-gradient(135deg, #ff8c00, #ff6b00);
+  background: radial-gradient(circle, rgba(163, 230, 53, 0.22) 0%, transparent 70%);
   top: 10%;
   right: -150px;
   animation-delay: 0s;
@@ -41,7 +44,7 @@
 .exp-orb-2 {
   width: 400px;
   height: 400px;
-  background: linear-gradient(135deg, #ffa500, #ff8c00);
+  background: radial-gradient(circle, rgba(132, 204, 22, 0.15) 0%, transparent 70%);
   bottom: 10%;
   left: -150px;
   animation-delay: 12s;
@@ -65,14 +68,13 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: 
-    linear-gradient(rgba(255, 140, 0, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 140, 0, 0.02) 1px, transparent 1px);
-  background-size: 60px 60px;
-  opacity: 0.6;
+  background-image:
+    linear-gradient(rgba(163, 230, 53, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(163, 230, 53, 0.04) 1px, transparent 1px);
+  background-size: 50px 50px;
 }
 
-/* Title Section */
+/* ── Title Section ── */
 .experiences-title {
   position: relative;
   text-align: center;
@@ -88,69 +90,46 @@
 }
 
 .experiences-title h1 {
-  font-size: 60px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
   font-weight: 700;
-  color: #e5e7eb;
+  color: #fff;
   margin: 0;
-  animation: fadeInDown 0.8s ease-out;
+  letter-spacing: 1px;
 }
 
 .experiences-title h1 .highlight {
-  background: linear-gradient(135deg, #ff8c00, #ff6b00);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  position: relative;
+  color: #a3e635;
 }
 
 .title-underline {
-  width: 200px;
-  height: 4px;
-  background: linear-gradient(90deg, transparent, #ff8c00, #ff6b00, transparent);
-  margin: 20px auto;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #a3e635, transparent);
+  margin: 18px auto 14px;
   border-radius: 2px;
-  animation: expandWidth 1s ease-out 0.3s backwards;
-  box-shadow: 0 0 20px rgba(255, 140, 0, 0.5);
+  box-shadow: 0 0 16px rgba(163, 230, 53, 0.4);
+  transition: width 0.9s ease 0.3s;
 }
 
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes expandWidth {
-  from {
-    width: 0;
-  }
-  to {
-    width: 200px;
-  }
+.experiences-title.animate .title-underline {
+  width: 200px;
 }
 
 .subtitle {
-  font-size: 18px;
-  color: #9ca3af;
-  margin-top: 10px;
-  font-weight: 500;
-  animation: fadeIn 1s ease-out 0.5s backwards;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 400;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease 0.5s;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.experiences-title.animate .subtitle {
+  opacity: 1;
 }
 
-/* Experiences Container */
+/* ── Experiences Container ── */
 .experiences-container {
   position: relative;
   display: flex;
@@ -161,33 +140,33 @@
   z-index: 1;
 }
 
-/* Timeline Line */
+/* ── Timeline Line ── */
 .timeline-line {
   position: absolute;
   left: 50%;
   top: 200px;
   bottom: 100px;
   width: 2px;
-  background: linear-gradient(to bottom, 
+  background: linear-gradient(to bottom,
     transparent,
-    rgba(255, 140, 0, 0.3) 20%,
-    rgba(255, 140, 0, 0.3) 80%,
+    rgba(163, 230, 53, 0.3) 20%,
+    rgba(163, 230, 53, 0.3) 80%,
     transparent
   );
   transform: translateX(-50%);
   z-index: 0;
 }
 
-/* Experience Card */
+/* ── Experience Card ── */
 .experiences-format {
   position: relative;
   display: flex;
   gap: 35px;
   padding: 45px;
-  background: rgba(15, 15, 15, 0.6);
+  background: rgba(163, 230, 53, 0.02);
   backdrop-filter: blur(10px);
   border-radius: 24px;
-  border: 1px solid rgba(255, 140, 0, 0.1);
+  border: 1px solid rgba(163, 230, 53, 0.12);
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
   transform: translateY(50px);
@@ -201,32 +180,46 @@
   animation-delay: var(--delay);
 }
 
+/* top accent line */
 .experiences-format::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(255, 140, 0, 0.05), transparent);
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #a3e635, transparent);
   opacity: 0;
-  transition: opacity 0.5s ease;
-  z-index: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;
 }
 
 .experiences-format:hover::before {
   opacity: 1;
 }
 
-.experiences-format:hover {
-  transform: translateY(-8px);
-  border-color: rgba(255, 140, 0, 0.3);
-  box-shadow: 
-    0 20px 60px rgba(0, 0, 0, 0.5),
-    0 0 40px rgba(255, 140, 0, 0.2);
+/* inner sweep */
+.experiences-format::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(163, 230, 53, 0.04), transparent);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 0;
 }
 
-/* Experience Left Section */
+.experiences-format:hover::after {
+  opacity: 1;
+}
+
+.experiences-format:hover {
+  transform: translateY(-8px);
+  border-color: rgba(163, 230, 53, 0.3);
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.5),
+    0 0 36px rgba(163, 230, 53, 0.08);
+}
+
+/* ── Experience Left ── */
 .experience-left {
   display: flex;
   flex-direction: column;
@@ -242,27 +235,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgba(255, 140, 0, 0.1), rgba(255, 107, 0, 0.1));
-  border: 2px solid rgba(255, 140, 0, 0.3);
+  background: rgba(163, 230, 53, 0.07);
+  border: 1px solid rgba(163, 230, 53, 0.22);
   border-radius: 20px;
-  transition: all 0.5s ease;
+  transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
   z-index: 1;
 }
 
 .experiences-format:hover .experience-number {
-  background: linear-gradient(135deg, rgba(255, 140, 0, 0.2), rgba(255, 107, 0, 0.2));
-  border-color: #ff8c00;
+  background: rgba(163, 230, 53, 0.15);
+  border-color: #a3e635;
   transform: scale(1.1) rotate(5deg);
-  box-shadow: 0 10px 30px rgba(255, 140, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(163, 230, 53, 0.2);
 }
 
 .number-text {
-  font-size: 36px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 34px;
   font-weight: 700;
-  background: linear-gradient(135deg, #ff8c00, #ff6b00);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #a3e635;
   position: relative;
   z-index: 2;
 }
@@ -274,7 +265,7 @@
   transform: translate(-50%, -50%);
   width: 70px;
   height: 70px;
-  background: radial-gradient(circle, rgba(255, 140, 0, 0.4), transparent);
+  background: radial-gradient(circle, rgba(163, 230, 53, 0.35), transparent);
   border-radius: 50%;
   opacity: 0;
   transition: opacity 0.5s ease;
@@ -286,28 +277,24 @@
 }
 
 @keyframes pulseGlow {
-  0%, 100% {
-    transform: translate(-50%, -50%) scale(1);
-  }
-  50% {
-    transform: translate(-50%, -50%) scale(1.2);
-  }
+  0%, 100% { transform: translate(-50%, -50%) scale(1); }
+  50%       { transform: translate(-50%, -50%) scale(1.2); }
 }
 
 .experience-connector {
   flex: 1;
   width: 2px;
   min-height: 60px;
-  background: linear-gradient(to bottom, rgba(255, 140, 0, 0.3), transparent);
-  transition: background 0.5s ease;
+  background: linear-gradient(to bottom, rgba(163, 230, 53, 0.3), transparent);
+  transition: background 0.5s ease, box-shadow 0.5s ease;
 }
 
 .experiences-format:hover .experience-connector {
-  background: linear-gradient(to bottom, rgba(255, 140, 0, 0.6), transparent);
-  box-shadow: 0 0 10px rgba(255, 140, 0, 0.5);
+  background: linear-gradient(to bottom, rgba(163, 230, 53, 0.6), transparent);
+  box-shadow: 0 0 10px rgba(163, 230, 53, 0.3);
 }
 
-/* Experience Content */
+/* ── Experience Content ── */
 .experience-content {
   flex: 1;
   display: flex;
@@ -332,7 +319,8 @@
 }
 
 .experience-content h2 {
-  font-size: 28px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 26px;
   font-weight: 700;
   color: #e5e7eb;
   margin: 0;
@@ -341,52 +329,48 @@
 }
 
 .experiences-format:hover .experience-content h2 {
-  color: #ff8c00;
+  color: #a3e635;
 }
 
 .experience-badge {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 8px 16px;
-  background: rgba(255, 140, 0, 0.1);
-  border: 1px solid rgba(255, 140, 0, 0.3);
+  padding: 7px 14px;
+  background: rgba(163, 230, 53, 0.08);
+  border: 1px solid rgba(163, 230, 53, 0.25);
   border-radius: 20px;
-  font-size: 13px;
-  color: #ff8c00;
-  font-weight: 600;
+  font-size: 12px;
+  color: #a3e635;
+  font-weight: 700;
+  letter-spacing: 0.04em;
   white-space: nowrap;
+  text-transform: uppercase;
 }
 
 .experience-badge.leadership {
-  background: rgba(251, 191, 36, 0.1);
-  border-color: rgba(251, 191, 36, 0.3);
-  color: #fbbf24;
+  background: rgba(163, 230, 53, 0.06);
+  border-color: rgba(163, 230, 53, 0.2);
+  color: #84cc16;
 }
 
 .experience-badge.leadership .badge-dot {
-  background: #fbbf24;
-  box-shadow: 0 0 10px rgba(251, 191, 36, 0.8);
+  background: #84cc16;
+  box-shadow: 0 0 8px rgba(132, 204, 22, 0.8);
 }
 
 .badge-dot {
-  width: 8px;
-  height: 8px;
-  background: #ff8c00;
+  width: 7px;
+  height: 7px;
+  background: #a3e635;
   border-radius: 50%;
   animation: pulse 2s infinite;
-  box-shadow: 0 0 10px rgba(255, 140, 0, 0.8);
+  box-shadow: 0 0 8px rgba(163, 230, 53, 0.8);
 }
 
 @keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.6;
-    transform: scale(1.2);
-  }
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.6; transform: scale(1.2); }
 }
 
 .company-info {
@@ -394,46 +378,46 @@
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
-  font-size: 16px;
-  color: #9ca3af;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.45);
 }
 
 .company-name {
   font-weight: 600;
   color: #d1d5db;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .separator {
-  color: #ff8c00;
+  color: #a3e635;
   font-weight: 700;
 }
 
 .duration {
   font-weight: 500;
-  color: #9ca3af;
+  color: rgba(255, 255, 255, 0.45);
 }
 
 .experience-description {
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.8;
-  color: #d1d5db;
+  color: rgba(255, 255, 255, 0.55);
   margin: 0;
   transition: color 0.3s ease;
 }
 
 .experiences-format:hover .experience-description {
-  color: #e5e7eb;
+  color: rgba(255, 255, 255, 0.85);
 }
 
-/* Experience Footer */
+/* ── Experience Footer ── */
 .experience-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 10px;
   padding-top: 15px;
-  border-top: 1px solid rgba(255, 140, 0, 0.1);
+  border-top: 1px solid rgba(163, 230, 53, 0.1);
 }
 
 .footer-left {
@@ -447,41 +431,41 @@
   align-items: center;
   gap: 8px;
   padding: 6px 14px;
-  background: rgba(255, 140, 0, 0.08);
+  background: rgba(163, 230, 53, 0.06);
   border-radius: 15px;
 }
 
 .status-dot {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
 }
 
 .status-dot.active {
-  background: #ff8c00;
-  box-shadow: 0 0 10px rgba(255, 140, 0, 0.8);
+  background: #a3e635;
+  box-shadow: 0 0 8px rgba(163, 230, 53, 0.8);
   animation: pulse 2s infinite;
 }
 
 .status-dot.completed {
-  background: #9ca3af;
-  box-shadow: 0 0 5px rgba(156, 163, 175, 0.5);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.15);
 }
 
 .status-text {
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 11px;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: #9ca3af;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .status-indicator:has(.status-dot.active) .status-text {
-  color: #ff8c00;
+  color: #a3e635;
 }
 
 .experience-arrow {
-  color: #ff8c00;
+  color: #a3e635;
   opacity: 0;
   transform: translate(-10px, 10px);
   transition: all 0.4s ease;
@@ -492,16 +476,13 @@
   transform: translate(0, 0);
 }
 
-/* Glowing Border Effect */
+/* ── Glow Border ── */
 .experience-glow-border {
   position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: linear-gradient(135deg, #ff8c00, #ff6b00, #ff4500, #ff8c00);
+  top: -2px; left: -2px; right: -2px; bottom: -2px;
+  background: linear-gradient(135deg, #a3e635, #84cc16, #4ade80, #a3e635);
   background-size: 300% 300%;
-  border-radius: 24px;
+  border-radius: 26px;
   opacity: 0;
   z-index: -1;
   transition: opacity 0.5s ease;
@@ -509,36 +490,24 @@
 }
 
 @keyframes gradientRotate {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .experiences-format:hover .experience-glow-border {
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
-/* Responsive Design */
+/* ── Responsive ── */
 @media (max-width: 1024px) {
   .experiences {
     margin: 60px 80px;
     gap: 60px;
   }
-
-  .experiences-title h1 {
-    font-size: 50px;
-  }
-
   .experiences-container {
     max-width: 800px;
   }
-
   .experiences-format {
     padding: 35px;
   }
@@ -549,62 +518,44 @@
     margin: 40px 40px;
     gap: 40px;
   }
-
-  .experiences-title h1 {
-    font-size: 36px;
-  }
-
   .timeline-line {
     display: none;
   }
-
   .experiences-format {
     flex-direction: column;
     padding: 30px 25px;
     gap: 25px;
   }
-
   .experience-left {
     flex-direction: row;
     width: 100%;
     gap: 20px;
   }
-
   .experience-connector {
     min-height: 2px;
     width: 100%;
   }
-
   .experience-number {
     width: 70px;
     height: 70px;
   }
-
   .number-text {
-    font-size: 28px;
+    font-size: 26px;
   }
-
   .experience-content h2 {
-    font-size: 22px;
+    font-size: 20px;
   }
-
   .header-top {
     flex-direction: column;
     align-items: flex-start;
   }
-
   .company-info {
     flex-direction: column;
     align-items: flex-start;
     gap: 5px;
   }
-
   .separator {
     display: none;
-  }
-
-  .floating-orb {
-    filter: blur(80px);
   }
 }
 
@@ -613,37 +564,24 @@
     margin: 30px 20px;
     gap: 30px;
   }
-
-  .experiences-title h1 {
-    font-size: 28px;
-  }
-
-  .subtitle {
-    font-size: 15px;
-  }
-
   .experiences-format {
     padding: 25px 20px;
   }
-
   .experience-number {
-    width: 60px;
-    height: 60px;
+    width: 58px;
+    height: 58px;
+    border-radius: 14px;
   }
-
   .number-text {
-    font-size: 24px;
+    font-size: 22px;
   }
-
   .experience-content h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
-
   .company-name {
-    font-size: 15px;
+    font-size: 14px;
   }
-
   .experience-description {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
