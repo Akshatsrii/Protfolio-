@@ -1,58 +1,68 @@
-import project1_img from "./project1.png";
-import project2_img from "./project2.png";
-import project3_img from "./project3.png";
-import project4_img from "./project4.png";
-import project5_img from "./project5.png";
-import project6_img from "./project6.png";
+
 
 const mywork_data = [
   {
-    w_title: "Tomoto — Food Ordering Platform",
+    w_title: "AgroPrice AI",
     w_desc:
-      "A full-stack MERN food ordering web application that allows users to browse food items, manage cart, place orders, and make secure online payments. Includes admin panel and backend APIs.",
-    w_img: project6_img,
-    w_tech: ["React", "Node.js", "Express", "MongoDB", "JWT"],
-    w_github: "https://github.com/Akshatsrii/Food-Ordering",
+      "A Smart Harvest Assistant platform helping farmers maximize profits by comparing local trader vs APMC Mandi rates using live AI recommendations.",
+    w_img: "/agroprice.png",
+    w_tech: ["NEXT.JS", "TYPESCRIPT", "TAILWIND CSS", "AI APIs", "NODE.JS"],
+    w_github: "https://github.com/Akshatsrii/AgroPrices",
+    w_live: "https://agro-prices.vercel.app/"
   },
   {
-    w_title: "Car Rental Website",
+    w_title: "Chisto: Food Ordering Platform",
     w_desc:
-      "A MERN-based car rental web application with user authentication, car booking system, and a dedicated owner dashboard to manage cars and bookings.",
-    w_img: project3_img,
-    w_tech: ["React", "Node.js", "Express", "MongoDB", "JWT"],
-    w_github: "https://github.com/Akshatsrii/Car-Rental-",
+      "A modern food ordering platform featuring a diverse menu, seamless cart management, and innovative voice ordering capabilities to elevate the dining experience.",
+    w_img: "/chisto.png",
+    w_tech: ["REACT.JS", "NODE.JS", "EXPRESS", "MONGODB", "VOICE AI"],
+    w_github: "https://github.com/Akshatsrii/Chisto-",
+    w_live: "https://chisto-psi.vercel.app/"
   },
   {
-    w_title: "Movie Ticket Booking System",
+    w_title: "RoboLearn: STEM Education Platform",
     w_desc:
-      "A full-stack movie ticket booking website that allows users to browse movies, view show timings, and book tickets, with admin control for managing movies and shows.",
-    w_img: project1_img,
-    w_tech: ["React", "Node.js", "Express", "MongoDB"],
-    w_github: "https://github.com/Akshatsrii/Movie-Tickets",
+      "A comprehensive robotics education platform empowering schools with future-ready STEM and core engineering education, including complete lab setups and training.",
+    w_img: "/robolearn.png",
+    w_tech: ["REACT.JS", "NEXT.JS", "TAILWIND CSS", "EDUCATION"],
+    w_github: "https://github.com/Akshatsrii/RoboLearn",
+    w_live: "https://robo-learn-ten.vercel.app/"
   },
   {
-    w_title: "Virtual Assistant",
+    w_title: "Prescripto: Doctor Appointment Booking",
     w_desc:
-      "A modern AI-powered virtual assistant built using the MERN stack, enabling users to interact through voice-based queries with authentication and assistant customization.",
-    w_img: project5_img,
-    w_tech: ["React", "Node.js", "Express", "AI APIs"],
-    w_github: "https://github.com/Akshatsrii/Virtual-Assistant",
+      "A comprehensive healthcare platform for booking appointments with expert medical specialists. Features verified doctor profiles, seamless scheduling, and a secure dashboard for managing consultations.",
+    w_img: "/prescripto.png",
+    w_tech: ["REACT.JS", "NODE.JS", "EXPRESS", "MONGODB", "TAILWIND CSS"],
+    w_github: "https://github.com/Akshatsrii/-Prescripto",
+    w_live: "https://doctors-booking-appointment.vercel.app/"
   },
   {
-    w_title: "Cognito — Anonymous Video Chat App",
+    w_title: "MovieDekho: Movie Ticket Booking",
     w_desc:
-      "A real-time anonymous video chat application inspired by Omegle, enabling 1-to-1 video conversations with no sign-up and instant peer connections.",
-    w_img: project4_img,
-    w_tech: ["React", "Node.js", "WebRTC", "Socket.io"],
-    w_github: "https://github.com/Akshatsrii/Cognito-",
+      "A premium movie ticket booking platform allowing users to explore the latest releases, view showtimes, and book tickets, complete with a dedicated Admin Panel.",
+    w_img: "/moviedekho.png",
+    w_tech: ["REACT.JS", "NODE.JS", "EXPRESS", "MONGODB", "TAILWIND CSS"],
+    w_github: "https://github.com/Akshatsrii/Movie-Dekho",
+    w_live: "https://movie-tickets-micw.vercel.app/"
   },
   {
-    w_title: "Doctor Booking & Healthcare Management",
+    w_title: "CarDekho: Premium Cabs & Drivers",
     w_desc:
-      "A MERN-based healthcare management system that allows users to book doctor appointments while admins manage schedules, doctors, and patient records.",
-    w_img: project2_img,
-    w_tech: ["React", "Node.js", "Express", "MongoDB"],
-    w_github: "https://github.com/Akshatsrii/Doctors-Booking-Appointment-",
+      "A premium car rental and cab booking application featuring location-based searches, advanced booking systems, and a dedicated portal for verified driver partners.",
+    w_img: "/cardekho.png",
+    w_tech: ["REACT.JS", "NODE.JS", "EXPRESS", "MONGODB", "TAILWIND CSS"],
+    w_github: "https://github.com/Akshatsrii/Car-Dekho",
+    w_live: "https://car-rental-omega-sage.vercel.app/"
+  },
+  {
+    w_title: "BankLens: Bank Statement Digitizer",
+    w_desc:
+      "A robust financial dashboard designed to digitize bank statements, featuring secure file uploads, intelligent OCR data extraction, and comprehensive transaction analytics.",
+    w_img: "/banklens.png",
+    w_tech: ["REACT.JS", "FIREBASE", "OCR AI", "TAILWIND CSS"],
+    w_github: "https://github.com/Akshatsrii/BankLenss",
+    w_live: "https://ak-project-caace.web.app/login"
   },
 ];
 

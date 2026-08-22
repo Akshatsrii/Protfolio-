@@ -1,146 +1,96 @@
-import React, { useEffect, useRef } from 'react'
-import './Experiences.css'
-import Experiences_Data from '../../assets/experiences_data'
+import React, { useEffect } from 'react';
+import './Experiences.css';
+import Experiences_Data from '../../assets/experiences_data';
+
+const ReactLogo = () => (
+  <svg width="32" height="32" viewBox="-10.5 -9.45 21 18.9" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="0" cy="0" r="2" fill="#0078D7"></circle>
+    <g stroke="#0078D7" strokeWidth="1.2" fill="none">
+      <ellipse rx="10" ry="4.5"></ellipse>
+      <ellipse rx="10" ry="4.5" transform="rotate(60)"></ellipse>
+      <ellipse rx="10" ry="4.5" transform="rotate(120)"></ellipse>
+    </g>
+  </svg>
+);
 
 const Experiences = () => {
-  const experiencesRef = useRef([]);
-  const containerRef = useRef(null);
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('animate');
+            entry.target.classList.add('reveal');
           }
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0.15, rootMargin: "0px 0px -50px 0px" }
     );
 
-    if (containerRef.current) {
-      observer.observe(containerRef.current);
-    }
-
-    experiencesRef.current.forEach((exp) => {
-      if (exp) observer.observe(exp);
-    });
+    const elements = document.querySelectorAll('.anim-element');
+    elements.forEach((el) => observer.observe(el));
 
     return () => observer.disconnect();
   }, []);
 
-  // Extract company and duration from e_name
-  const parseExperience = (e_name) => {
-    const parts = e_name.split('|');
-    return {
-      company: parts[0]?.trim() || '',
-      duration: parts[1]?.trim() || ''
-    };
-  };
-
-  // Determine badge type based on role
-  const getBadgeType = (role) => {
-    if (role.toLowerCase().includes('intern')) return { text: 'Internship', color: 'internship' };
-    if (role.toLowerCase().includes('member')) return { text: 'Leadership', color: 'leadership' };
-    return { text: 'Professional', color: 'professional' };
-  };
-
   return (
-    <div id='experiences' className='experiences'>
-      {/* Background Effects */}
-      <div className="experiences-background">
-        <div className="floating-orb exp-orb-1"></div>
-        <div className="floating-orb exp-orb-2"></div>
-        <div className="grid-pattern"></div>
-      </div>
-
-      <div className="experiences-title" ref={containerRef}>
-        <h1>
-          Professional <span className="highlight">Experience</span>
-        </h1>
-        <div className="title-underline"></div>
-        <p className="subtitle">Building real-world applications and gaining hands-on expertise</p>
-      </div>
-
+    <div id="experiences" className="experiences-section">
       <div className="experiences-container">
-        {Experiences_Data.map((experience, index) => {
-          const { company, duration } = parseExperience(experience.e_name);
-          const badge = getBadgeType(experience.e_no);
-          
-          return (
-            <div 
-              key={index} 
-              className='experiences-format'
-              ref={(el) => (experiencesRef.current[index] = el)}
-              style={{ '--delay': `${index * 0.2}s` }}
-            >
-              <div className="experience-left">
-                <div className="experience-number">
-                  <span className="number-text">{String(index + 1).padStart(2, '0')}</span>
-                  <div className="number-glow"></div>
-                </div>
-                
-                <div className="experience-connector"></div>
-              </div>
-
-              <div className="experience-content">
-                <div className="experience-header">
-                  <div className="header-top">
-                    <h2>{experience.e_no}</h2>
-                    <div className={`experience-badge ${badge.color}`}>
-                      <span className="badge-dot"></span>
-                      <span className="badge-text">{badge.text}</span>
-                    </div>
-                  </div>
-                  
-                  <div className="company-info">
-                    <span className="company-name">{company}</span>
-                    {duration && (
-                      <>
-                        <span className="separator">•</span>
-                        <span className="duration">{duration}</span>
-                      </>
+        <div className="section-title-wrapper anim-element fade-in-up">
+          <h1 className="section-heading-gradient">EXPERIENCE</h1>
+          <p className="section-subtitle">A timeline of my professional journey.</p>
+        </div>
+        
+        <div className="editorial-timeline">
+          {Experiences_Data.map((exp, index) => (
+            <div key={index} className="timeline-block anim-element fade-in-up">
+              
+              <div className="timeline-left">
+                <div className="sticky-content">
+                  <div className="timeline-date">{exp.date}</div>
+                  <div className="timeline-logo">
+                    {exp.logo === 'REACT_SVG' ? (
+                      <ReactLogo />
+                    ) : (
+                      <img src={exp.logo} alt={exp.company} />
                     )}
                   </div>
                 </div>
-                
-                <p className="experience-description">{experience.e_desc}</p>
-
-                <div className="experience-footer">
-                  <div className="footer-left">
-                    <div className="status-indicator">
-                      {duration.includes('Present') ? (
-                        <>
-                          <span className="status-dot active"></span>
-                          <span className="status-text">Currently Active</span>
-                        </>
-                      ) : (
-                        <>
-                          <span className="status-dot completed"></span>
-                          <span className="status-text">Completed</span>
-                        </>
-                      )}
-                    </div>
-                  </div>
-                  
-                  <div className="experience-arrow">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </div>
+              
+              <div className="timeline-divider">
+                <div className="timeline-node"></div>
+              </div>
+              
+              <div className="timeline-right">
+                <h2 className="timeline-role">{exp.role}</h2>
+                {exp.link ? (
+                  <a href={exp.link} target="_blank" rel="noopener noreferrer" className="timeline-company linkable">
+                    {exp.company}
+                    <svg className="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
                     </svg>
-                  </div>
+                  </a>
+                ) : (
+                  <h3 className="timeline-company">{exp.company}</h3>
+                )}
+                
+                <div className="timeline-points">
+                  {exp.points.map((point, i) => (
+                    <p key={i} className="point-text">
+                      <span className="point-accent"></span>
+                      {point}
+                    </p>
+                  ))}
                 </div>
               </div>
-
-              <div className="experience-glow-border"></div>
+              
             </div>
-          )
-        })}
+          ))}
+        </div>
       </div>
-
-      {/* Timeline Line */}
-      <div className="timeline-line"></div>
     </div>
-  )
-}
+  );
+};
 
-export default Experiences
+export default Experiences;

@@ -1,7 +1,5 @@
 import React from "react";
 import "./Footer.css";
-import mail_icon from "../../assets/mail_icon.svg";
-import call_icon from "../../assets/call_icon.svg";
 
 const Footer = () => {
   const handleScrollToTop = () => {
@@ -9,76 +7,50 @@ const Footer = () => {
   };
 
   return (
-    <footer className="footer">
-      <div className="footer-container">
-        <div className="footer-top">
-          <div className="footer-col footer-about">
-            <h2 className="footer-logo">Akshat Srivastava</h2>
-            <p className="footer-tagline">Full-Stack Developer (MERN)</p>
-            <p className="footer-description">
-              Passionate about building scalable web applications and solving complex problems. Currently pursuing B.Tech in Information Technology at Rajasthan Technical University, Kota.
-            </p>
-            <div className="footer-social">
-              <a href="https://www.linkedin.com/in/akshat-srivastava-6105102a7/" target="_blank" rel="noopener noreferrer" className="footer-social-link" title="LinkedIn">
-                <img src="/linkedin.webp" alt="LinkedIn" />
-              </a>
-              <a href="https://github.com/Akshatsrii" target="_blank" rel="noopener noreferrer" className="footer-social-link" title="GitHub">
-                <img src="/Github.webp" alt="GitHub" />
-              </a>
-              <a href="https://leetcode.com/u/Akshatsrivastava007/" target="_blank" rel="noopener noreferrer" className="footer-social-link" title="LeetCode">
-                <img src="/Leetcode.jpg" alt="LeetCode" />
-              </a>
-            </div>
-          </div>
-          <div className="footer-col footer-links">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About Me</a></li>
-              <li><a href="#skills">Experiences</a></li>
-              <li><a href="#projects">Achievements</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-          <div className="footer-col footer-contact">
-            <h3>Get In Touch</h3>
-            <div className="footer-contact-item">
-              <img src={mail_icon} alt="email" />
-              <div>
-                <span className="contact-label">Email</span>
-                <a href="mailto:chickusrivastava535@gmail.com">akshatsrivastava1204@gmail.com</a>
-              </div>
-            </div>
-            <div className="footer-contact-item">
-              <img src={call_icon} alt="phone" />
-              <div>
-                <span className="contact-label">Phone</span>
-                <a href="tel:+919024085505">+91 9024085505</a>
-              </div>
-            </div>
-            <div className="footer-contact-item">
-              <svg className="location-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="currentColor" />
-              </svg>
-              <div>
-                <span className="contact-label">Location</span>
-                <span>Rawatbhata, Rajasthan, India</span>
-              </div>
-            </div>
-          </div>
+    <footer className="footer-minimal">
+      <div className="footer-line"></div>
+      
+      <div className="footer-content">
+        {/* Left Side */}
+        <div className="footer-left">
+          <h2 className="footer-name">Akshat Srivastava</h2>
+          <p className="footer-role">Full Stack AI Developer &nbsp;·&nbsp; Kota, Rajasthan</p>
+          <p className="footer-copy">
+            © {new Date().getFullYear()} Akshat Srivastava. Crafted with <span className="heart">❤️</span> and a lot of ☕
+          </p>
         </div>
-        <div className="footer-divider"></div>
-        <div className="footer-bottom">
-          <p className="footer-copyright">© {new Date().getFullYear()} Akshat Srivastava. Rajasthan Technical University.</p>
-          <div className="footer-bottom-links">
-            <a href="#privacy">RTU KOTA</a>
-            <span className="separator">•</span>
-            <a href="#terms">Informatiom Technology Branch </a>
+
+        {/* Right Side */}
+        <div className="footer-right">
+          <div className="footer-links-group">
+            <a 
+              href="https://leetcode.com/u/Akshatsrivastava007/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="footer-btn"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="btn-icon">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              LeetCode Profile
+            </a>
+
+            <div className="social-circles">
+              <a href="mailto:akshatsrivastava1204@gmail.com" className="social-circle" aria-label="Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </a>
+              <a href="https://github.com/Akshatsrii" target="_blank" rel="noopener noreferrer" className="social-circle" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/akshat-srivastava-6105102a7/" target="_blank" rel="noopener noreferrer" className="social-circle" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </a>
+            </div>
           </div>
-          <button className="scroll-to-top" onClick={handleScrollToTop} aria-label="Scroll to top">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 4L4 12H8V20H16V12H20L12 4Z" fill="currentColor" />
-            </svg>
+
+          <button className="back-to-top" onClick={handleScrollToTop}>
+            ↑ Back to top
           </button>
         </div>
       </div>
