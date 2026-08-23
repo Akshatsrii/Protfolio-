@@ -60,6 +60,8 @@ A **modern, responsive personal portfolio website** crafted with **React.js** to
 | 🏆 **Achievements Gallery** | Hackathon wins and competitive programming ranks |
 | 📜 **Certifications** | Professional credentials and course completions |
 | 📬 **Contact Form** | Functional form with Web3Forms integration |
+| 🌐 **3D Skill Sphere** | Interactive rotating TagCloud displaying technical skills |
+| 🖱️ **Magnetic Cursor** | Premium custom trailing cursor with hover magnet effect |
 | 📱 **Responsive Design** | Optimized for all devices and screen sizes |
 | 🎨 **Modern UI/UX** | Clean interface with smooth animations |
 
