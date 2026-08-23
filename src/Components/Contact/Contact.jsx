@@ -1,8 +1,31 @@
-import { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import TagCloud from "TagCloud";
 import "./Contact.css";
 
 const Contact = () => {
   const [result, setResult] = useState("");
+  const cloudRef = useRef(null);
+  const isCloudLoaded = useRef(false);
+
+  useEffect(() => {
+    if (!isCloudLoaded.current && cloudRef.current) {
+      const texts = [
+        'React', 'Next.js', 'Node.js', 'Express',
+        'MongoDB', 'TypeScript', 'JavaScript', 'Java',
+        'C++', 'Python', 'SQL', 'Docker',
+        'Three.js', 'Tailwind', 'Git', 'Firebase'
+      ];
+      
+      TagCloud(cloudRef.current, texts, {
+        radius: window.innerWidth > 768 ? 160 : 120,
+        maxSpeed: 'fast',
+        initSpeed: 'normal',
+        direction: 135,
+        keep: true
+      });
+      isCloudLoaded.current = true;
+    }
+  }, []);
 
   const onSubmit = async (e) => {
     e.preventDefault();
@@ -48,6 +71,10 @@ const Contact = () => {
             <div className="contact-email-badge">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
               <span>akshatsrivastava1204@gmail.com</span>
+            </div>
+            
+            <div className="tagcloud-container" style={{ marginTop: '40px' }}>
+              <div ref={cloudRef} className="sphere-wrapper"></div>
             </div>
           </div>
 

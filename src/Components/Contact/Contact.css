@@ -17,7 +17,7 @@
 
 .section-title-wrapper {
   margin-bottom: 50px;
-  text-align: left;
+  text-align: center;
 }
 
 .section-heading-gradient {
@@ -218,4 +218,31 @@
   .section-heading-gradient {
     font-size: 2.2rem;
   }
+}
+
+/* TagCloud Styles */
+.tagcloud-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.sphere-wrapper {
+  color: #0078D7;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.sphere-wrapper span {
+  cursor: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.sphere-wrapper span:hover {
+  color: #ffffff;
+  transform: scale(1.2);
 }

@@ -17,39 +17,59 @@ a, button {
   cursor: none; /* Make sure links also use custom cursor */
 }
 
-.custom-cursor {
+.custom-cursor-inner {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 8px;
   height: 8px;
   background-color: #0078D7;
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  z-index: 9999;
+  z-index: 10000;
   transition: width 0.2s, height 0.2s;
+  margin-left: -4px;
+  margin-top: -4px;
 }
 
-.custom-cursor::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 32px;
-  height: 32px;
+.custom-cursor-outer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
   border: 2px solid rgba(0, 120, 215, 0.5);
   border-radius: 50%;
-  transition: width 0.2s, height 0.2s;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: width 0.2s, height 0.2s, background-color 0.2s;
+  margin-left: -20px;
+  margin-top: -20px;
 }
 
-a:hover ~ .custom-cursor, button:hover ~ .custom-cursor {
-  width: 12px;
-  height: 12px;
+a:hover ~ .custom-cursor-inner, button:hover ~ .custom-cursor-inner,
+.custom-cursor-inner.hover {
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  mix-blend-mode: difference;
+}
+
+a:hover ~ .custom-cursor-outer, button:hover ~ .custom-cursor-outer,
+.custom-cursor-outer.hover {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 120, 215, 0.1);
 }
  /* Global Section Headings */
 .section-title-wrapper {
   margin-bottom: 50px;
-  text-align: left;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .section-title-wrapper.center {
   text-align: center;
