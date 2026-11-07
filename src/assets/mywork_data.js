@@ -1,6 +1,13 @@
-
-
 const mywork_data = [
+  {
+    w_title: "Adhikar: AI Citizen Welfare Platform",
+    w_desc:
+      "A dual-backend AI platform (Node.js + FastAPI + Gemini + pgvector) for government scheme discovery, deterministic eligibility, family optimization, and AI-assisted applications.",
+    w_img: "/adhikar.png",
+    w_tech: ["FASTAPI", "NODE.JS", "GEMINI AI", "PGVECTOR", "MONGODB", "REACT.JS"],
+    w_github: "https://github.com/Akshatsrii/Adhikar",
+    w_live: "https://adhikar-seven.vercel.app/"
+  },
   {
     w_title: "AgroPrice AI",
     w_desc:
