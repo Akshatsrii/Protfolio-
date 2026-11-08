@@ -83,7 +83,7 @@ const Achievements = () => {
                 <p>DSA & Problem Solving</p>
               </div>
               <div className="list-item">
-                <h4>2,000+ GitHub</h4>
+                <h4>2,500+ GitHub</h4>
                 <p>Active contributions</p>
               </div>
               <div className="list-item">

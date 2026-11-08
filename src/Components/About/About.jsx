@@ -69,7 +69,7 @@ const About = () => {
               <span className="profile-icon">{"{ }"}</span>
               <div className="profile-info">
                 <span className="profile-name">GitHub</span>
-                <span className="profile-stat">2000+ Commits</span>
+                <span className="profile-stat">2500+ Contributions</span>
               </div>
             </a>
           </div>
