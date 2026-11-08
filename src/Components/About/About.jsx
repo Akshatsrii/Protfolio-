@@ -61,7 +61,7 @@ const About = () => {
               <span className="profile-icon">{"</>"}</span>
               <div className="profile-info">
                 <span className="profile-name">LeetCode</span>
-                <span className="profile-stat">300+ DSA Solved</span>
+                <span className="profile-stat">350+ DSA Solved</span>
               </div>
             </a>
             

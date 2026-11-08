@@ -47,7 +47,7 @@ const akshat = {
 };
 ```
 
-> I am an **Information Technology undergrad at RTU Kota**, deeply passionate about architecting robust digital solutions. From building AI-powered platforms to engineering scalable microservices handling thousands of records, I thrive on translating complex challenges into elegant, scalable software. Beyond web development, I am heavily invested in **competitive programming (300+ LeetCode)** and open-source contributions.
+> I am an **Information Technology undergrad at RTU Kota**, deeply passionate about architecting robust digital solutions. From building AI-powered platforms to engineering scalable microservices handling thousands of records, I thrive on translating complex challenges into elegant, scalable software. Beyond web development, I am heavily invested in **competitive programming (350+ LeetCode)** and open-source contributions.
 
 ---
 
@@ -121,7 +121,7 @@ const akshat = {
 
 - 🏆 **Unstoppable Hackathon (LNMIIT):** Top 10 among 100+ teams.
 - 🥈 **Reckon 7.0 Jodhpur:** Secured Top 15 rank.
-- 👨‍💻 **Coding & Open Source:** 300+ LeetCode DSA problems solved, 2,000+ GitHub commits.
+- 👨‍💻 **Coding & Open Source:** 350+ LeetCode DSA problems solved, 2,000+ GitHub commits.
 - 🎓 **Research:** Researching CNNs for AI in Digital Textiles (Automating RIP and Correcting Fabric Distortion).
 - 🧑‍🏫 **Leadership:** Head Coordinator at React Clubs RTU Kota, empowering 50+ students through hands-on technical sessions.
 

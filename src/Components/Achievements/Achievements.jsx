@@ -79,7 +79,7 @@ const Achievements = () => {
             
             <div className="list-items" style={{ gap: '15px' }}>
               <div className="list-item">
-                <h4>300+ LeetCode</h4>
+                <h4>350+ LeetCode</h4>
                 <p>DSA & Problem Solving</p>
               </div>
               <div className="list-item">
